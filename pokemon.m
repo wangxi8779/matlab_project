@@ -14,13 +14,13 @@ end
 % get dimension based on difficulty
 dimension = difficulty + 1;
 
-slotsNumber = dimension * dimension;
+slots_number = dimension * dimension;
 % shuffle images
 imageIndexes = getImageIndexes(slotsNumber);
 
 % display images
 figure;
-for i = 1:slotsNumber
+for i = 1:slots_number
     subplot(dimension, dimension, i);
     path = sprintf("%d.png", imageIndexes(i));
     imshow(imread(path));
@@ -34,7 +34,7 @@ for i = 1:5
 end
 
 % display the images with placeholders
-for i = 1:slotsNumber
+for i = 1:slots_number
     subplot(dimension, dimension, i);
     img = imshow(imread("0.png"));
     % add trigger for click event
