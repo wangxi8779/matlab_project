@@ -29,7 +29,7 @@ end
 % wait for player to memorise the images
 disp("Game is starting in");
 for i = 1:5
-    pause(1);
+    pause(difficulty);
     fprintf("%d\n", 6 - i);
 end
 

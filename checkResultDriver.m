@@ -13,13 +13,13 @@ disp("actual output");
 disp(checkResult([1, 2], 2));
 
 disp("expected output");
-disp("come on, start over!");
+disp("you lose!");
 disp(-1);
 disp("actual output");
 disp(checkResult([1, 2, 3], 3));
 
 disp("expected output");
-disp("fine, as long as you are happy");
+disp("you lose!");
 disp(-1);
 disp("actual output");
 disp(checkResult([1, 2, 3, 4], 3));
