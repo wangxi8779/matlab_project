@@ -20,7 +20,6 @@ imageIndexes = getImageIndexes(slotsNumber);
 
 % display images
 figure;
-
 for i = 1:slotsNumber
     subplot(dimension, dimension, i);
     path = sprintf("%d.png", imageIndexes(i));
@@ -38,4 +37,6 @@ end
 for i = 1:slotsNumber
     subplot(dimension, dimension, i);
     img = imshow(imread("0.png"));
+    % add trigger for click event
+    set(img,'ButtonDownFcn', {@flipCallback, imageIndexes(i), dimension});
 end

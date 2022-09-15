@@ -7,7 +7,7 @@ disp(1);
 disp("actual output");
 disp(length(imageIndexes));
 
-disp("image number should be between 1 to 9"); 
+disp("image number should be between 1 to 9");
 disp("expected output");
 disp(true);
 disp("actual output");
